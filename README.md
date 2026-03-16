@@ -1,8 +1,20 @@
-# drcom-keepalive
+<p align="center">
+  <img src=".github/banner.svg" alt="drcom-keepalive" width="800"/>
+</p>
 
-Drcom 校园网认证保活工具 — 登录一次，永不掉线。
+<p align="center">
+  <a href="https://github.com/dev-Flyblue/drcom-keepalive/releases"><img src="https://img.shields.io/github/v/release/dev-Flyblue/drcom-keepalive?style=flat-square&color=38bdf8" alt="Release"/></a>
+  <img src="https://img.shields.io/badge/language-Rust-dea584?style=flat-square" alt="Rust"/>
+  <img src="https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square" alt="Windows"/>
+  <img src="https://img.shields.io/github/license/dev-Flyblue/drcom-keepalive?style=flat-square&color=818cf8" alt="License"/>
+</p>
 
-通过逆向 Drcom Web Portal 前端协议（JSONP + XOR 加密），实现自动登录和会话保活。掉线时自动重连，支持自定义活跃时段。
+<p align="center">
+  通过逆向 Drcom Web Portal 前端协议（JSONP + XOR 加密），实现自动登录和会话保活。<br/>
+  掉线时自动重连，支持自定义活跃时段。
+</p>
+
+---
 
 ## 原理
 
@@ -41,12 +53,12 @@ Drcom 校园网认证保活工具 — 登录一次，永不掉线。
 cargo build --release
 ```
 
-产物：`target/release/campus-keepalive.exe`（~1.8MB）
+产物：`target/release/drcom-keepalive.exe`（~1.8MB）
 
 ### 运行
 
 ```bash
-./campus-keepalive
+./drcom-keepalive
 ```
 
 交互式引导：
